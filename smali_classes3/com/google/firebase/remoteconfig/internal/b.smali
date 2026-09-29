@@ -645,10 +645,38 @@
 .end method
 
 .method public g()Lorg/json/JSONObject;
-    .locals 1
+    .locals 3
 
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/b;->b:Lorg/json/JSONObject;
 
+    :try_start_0
+    const-string v1, "android_nav_v2_enabled"
+
+    const-string v2, "true"
+
+    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v1, "android_nav_v2_rollcall_badge"
+
+    const-string v2, "true"
+
+    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v1, "android_gold_subscription_override"
+
+    const-string v2, "true"
+
+    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v1, "android_subscribe_gold_button_enabled"
+
+    const-string v2, "true"
+
+    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
     return-object v0
 .end method
 
