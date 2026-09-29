@@ -1,0 +1,59 @@
+.class public LSi/C0$B$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = LSi/C0$B;->b(LQi/P;LSi/s$a;LQi/J;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = "b"
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:LSi/C0$C;
+
+.field public final synthetic b:LSi/C0$B;
+
+
+# direct methods
+.method public constructor <init>(LSi/C0$B;LSi/C0$C;)V
+    .locals 0
+
+    iput-object p1, p0, LSi/C0$B$b;->b:LSi/C0$B;
+
+    iput-object p2, p0, LSi/C0$B$b;->a:LSi/C0$C;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 2
+
+    iget-object v0, p0, LSi/C0$B$b;->b:LSi/C0$B;
+
+    iget-object v0, v0, LSi/C0$B;->b:LSi/C0;
+
+    invoke-static {v0}, LSi/C0;->t(LSi/C0;)Ljava/util/concurrent/Executor;
+
+    move-result-object v0
+
+    new-instance v1, LSi/C0$B$b$a;
+
+    invoke-direct {v1, p0}, LSi/C0$B$b$a;-><init>(LSi/C0$B$b;)V
+
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+
+    return-void
+.end method

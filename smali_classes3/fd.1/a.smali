@@ -1,0 +1,58 @@
+.class public final Lfd/a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ltd/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lfd/a$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:Ltd/a;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lfd/a;
+
+    invoke-direct {v0}, Lfd/a;-><init>()V
+
+    sput-object v0, Lfd/a;->a:Ltd/a;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public configure(Ltd/b;)V
+    .locals 2
+
+    sget-object v0, Lfd/a$a;->a:Lfd/a$a;
+
+    const-class v1, Lfd/i;
+
+    invoke-interface {p1, v1, v0}, Ltd/b;->registerEncoder(Ljava/lang/Class;Lsd/d;)Ltd/b;
+
+    const-class v1, Lfd/b;
+
+    invoke-interface {p1, v1, v0}, Ltd/b;->registerEncoder(Ljava/lang/Class;Lsd/d;)Ltd/b;
+
+    return-void
+.end method

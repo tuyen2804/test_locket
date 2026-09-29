@@ -1,0 +1,225 @@
+.class public Lc0/p;
+.super Landroidx/camera/core/impl/m;
+.source "SourceFile"
+
+
+# instance fields
+.field public final c:Lc0/g$a;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/camera/core/impl/CameraControlInternal;Lc0/g$a;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Landroidx/camera/core/impl/m;-><init>(Landroidx/camera/core/impl/CameraControlInternal;)V
+
+    iput-object p2, p0, Lc0/p;->c:Lc0/g$a;
+
+    return-void
+.end method
+
+.method public static synthetic q(Lc0/p;Ljava/util/List;Ljava/lang/Void;)LBc/p;
+    .locals 2
+
+    iget-object p2, p0, Lc0/p;->c:Lc0/g$a;
+
+    const/4 v0, 0x0
+
+    invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/camera/core/impl/i;
+
+    invoke-virtual {p0, v1}, Lc0/p;->t(Landroidx/camera/core/impl/i;)I
+
+    move-result v1
+
+    invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroidx/camera/core/impl/i;
+
+    invoke-virtual {p0, p1}, Lc0/p;->u(Landroidx/camera/core/impl/i;)I
+
+    move-result p0
+
+    invoke-interface {p2, v1, p0}, Lc0/g$a;->a(II)LBc/p;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic r(LBc/p;Ljava/lang/Void;)LBc/p;
+    .locals 0
+
+    invoke-interface {p0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, LM/m;
+
+    invoke-interface {p0}, LM/m;->b()LBc/p;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic s(LBc/p;LM/m;)LBc/p;
+    .locals 0
+
+    invoke-interface {p0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, LM/m;
+
+    invoke-interface {p0}, LM/m;->a()LBc/p;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public d(Ljava/util/List;II)LBc/p;
+    .locals 2
+
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result p3
+
+    const/4 v0, 0x1
+
+    if-ne p3, v0, :cond_0
+
+    move p3, v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p3, 0x0
+
+    :goto_0
+    const-string v1, "Only support one capture config."
+
+    invoke-static {p3, v1}, Lu2/f;->b(ZLjava/lang/Object;)V
+
+    invoke-virtual {p0, p2, v0}, Landroidx/camera/core/impl/m;->n(II)LBc/p;
+
+    move-result-object p2
+
+    invoke-static {p2}, LS/d;->a(LBc/p;)LS/d;
+
+    move-result-object p3
+
+    new-instance v0, Lc0/m;
+
+    invoke-direct {v0, p2}, Lc0/m;-><init>(LBc/p;)V
+
+    invoke-static {}, LR/c;->b()Ljava/util/concurrent/Executor;
+
+    move-result-object v1
+
+    invoke-virtual {p3, v0, v1}, LS/d;->e(LS/a;Ljava/util/concurrent/Executor;)LS/d;
+
+    move-result-object p3
+
+    new-instance v0, Lc0/n;
+
+    invoke-direct {v0, p0, p1}, Lc0/n;-><init>(Lc0/p;Ljava/util/List;)V
+
+    invoke-static {}, LR/c;->b()Ljava/util/concurrent/Executor;
+
+    move-result-object p1
+
+    invoke-virtual {p3, v0, p1}, LS/d;->e(LS/a;Ljava/util/concurrent/Executor;)LS/d;
+
+    move-result-object p1
+
+    new-instance p3, Lc0/o;
+
+    invoke-direct {p3, p2}, Lc0/o;-><init>(LBc/p;)V
+
+    invoke-static {}, LR/c;->b()Ljava/util/concurrent/Executor;
+
+    move-result-object p2
+
+    invoke-virtual {p1, p3, p2}, LS/d;->e(LS/a;Ljava/util/concurrent/Executor;)LS/d;
+
+    move-result-object p1
+
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object p1
+
+    invoke-static {p1}, LS/n;->k(Ljava/util/Collection;)LBc/p;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final t(Landroidx/camera/core/impl/i;)I
+    .locals 2
+
+    invoke-virtual {p1}, Landroidx/camera/core/impl/i;->g()Landroidx/camera/core/impl/k;
+
+    move-result-object p1
+
+    sget-object v0, Landroidx/camera/core/impl/i;->j:Landroidx/camera/core/impl/k$a;
+
+    const/16 v1, 0x64
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-interface {p1, v0, v1}, Landroidx/camera/core/impl/k;->h(Landroidx/camera/core/impl/k$a;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final u(Landroidx/camera/core/impl/i;)I
+    .locals 2
+
+    invoke-virtual {p1}, Landroidx/camera/core/impl/i;->g()Landroidx/camera/core/impl/k;
+
+    move-result-object p1
+
+    sget-object v0, Landroidx/camera/core/impl/i;->i:Landroidx/camera/core/impl/k$a;
+
+    const/4 v1, 0x0
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-interface {p1, v0, v1}, Landroidx/camera/core/impl/k;->h(Landroidx/camera/core/impl/k$a;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    return p1
+.end method

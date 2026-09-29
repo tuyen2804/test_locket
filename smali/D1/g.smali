@@ -1,0 +1,326 @@
+.class public final LD1/g;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public final a:I
+
+.field public final b:Lkotlin/jvm/functions/Function2;
+
+.field public c:F
+
+
+# direct methods
+.method public constructor <init>(ILkotlin/jvm/functions/Function2;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput p1, p0, LD1/g;->a:I
+
+    iput-object p2, p0, LD1/g;->b:Lkotlin/jvm/functions/Function2;
+
+    return-void
+.end method
+
+.method public static final synthetic a(LD1/g;FLsj/b;)Ljava/lang/Object;
+    .locals 0
+
+    invoke-virtual {p0, p1, p2}, LD1/g;->e(FLsj/b;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final b()F
+    .locals 1
+
+    iget v0, p0, LD1/g;->c:F
+
+    return v0
+.end method
+
+.method public final c(I)I
+    .locals 2
+
+    iget v0, p0, LD1/g;->c:F
+
+    invoke-static {v0}, LEj/c;->d(F)I
+
+    move-result v0
+
+    sub-int/2addr p1, v0
+
+    const/4 v0, 0x0
+
+    iget v1, p0, LD1/g;->a:I
+
+    invoke-static {p1, v0, v1}, Lkotlin/ranges/f;->m(III)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final d()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput v0, p0, LD1/g;->c:F
+
+    return-void
+.end method
+
+.method public final e(FLsj/b;)Ljava/lang/Object;
+    .locals 4
+
+    instance-of v0, p2, LD1/g$a;
+
+    if-eqz v0, :cond_0
+
+    move-object v0, p2
+
+    check-cast v0, LD1/g$a;
+
+    iget v1, v0, LD1/g$a;->c:I
+
+    const/high16 v2, -0x80000000
+
+    and-int v3, v1, v2
+
+    if-eqz v3, :cond_0
+
+    sub-int/2addr v1, v2
+
+    iput v1, v0, LD1/g$a;->c:I
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v0, LD1/g$a;
+
+    invoke-direct {v0, p0, p2}, LD1/g$a;-><init>(LD1/g;Lsj/b;)V
+
+    :goto_0
+    iget-object p2, v0, LD1/g$a;->a:Ljava/lang/Object;
+
+    invoke-static {}, Ltj/c;->f()Ljava/lang/Object;
+
+    move-result-object v1
+
+    iget v2, v0, LD1/g$a;->c:I
+
+    const/4 v3, 0x1
+
+    if-eqz v2, :cond_2
+
+    if-ne v2, v3, :cond_1
+
+    invoke-static {p2}, Lnj/r;->b(Ljava/lang/Object;)V
+
+    goto :goto_1
+
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_2
+    invoke-static {p2}, Lnj/r;->b(Ljava/lang/Object;)V
+
+    iget-object p2, p0, LD1/g;->b:Lkotlin/jvm/functions/Function2;
+
+    invoke-static {p1}, Luj/b;->c(F)Ljava/lang/Float;
+
+    move-result-object p1
+
+    iput v3, v0, LD1/g$a;->c:I
+
+    invoke-interface {p2, p1, v0}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    if-ne p2, v1, :cond_3
+
+    return-object v1
+
+    :cond_3
+    :goto_1
+    check-cast p2, Ljava/lang/Number;
+
+    invoke-virtual {p2}, Ljava/lang/Number;->floatValue()F
+
+    move-result p1
+
+    iget p2, p0, LD1/g;->c:F
+
+    add-float/2addr p2, p1
+
+    iput p2, p0, LD1/g;->c:F
+
+    sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    return-object p1
+.end method
+
+.method public final f(IILsj/b;)Ljava/lang/Object;
+    .locals 5
+
+    if-gt p1, p2, :cond_4
+
+    sub-int v0, p2, p1
+
+    iget v1, p0, LD1/g;->a:I
+
+    if-gt v0, v1, :cond_3
+
+    int-to-float v0, p1
+
+    iget v2, p0, LD1/g;->c:F
+
+    cmpl-float v3, v0, v2
+
+    if-ltz v3, :cond_0
+
+    int-to-float v3, p2
+
+    int-to-float v4, v1
+
+    add-float/2addr v4, v2
+
+    cmpg-float v3, v3, v4
+
+    if-gtz v3, :cond_0
+
+    sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    return-object p1
+
+    :cond_0
+    cmpg-float v0, v0, v2
+
+    if-gez v0, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    sub-int p1, p2, v1
+
+    :goto_0
+    int-to-float p1, p1
+
+    invoke-virtual {p0, p1, p3}, LD1/g;->g(FLsj/b;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-static {}, Ltj/c;->f()Ljava/lang/Object;
+
+    move-result-object p2
+
+    if-ne p1, p2, :cond_2
+
+    return-object p1
+
+    :cond_2
+    sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    return-object p1
+
+    :cond_3
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p2, "Expected range ("
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p2, ") to be \u2264 viewportSize="
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget p2, p0, LD1/g;->a:I
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    new-instance p2, Ljava/lang/IllegalArgumentException;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+
+    :cond_4
+    new-instance p3, Ljava/lang/StringBuilder;
+
+    invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "Expected min="
+
+    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p1, " \u2264 max="
+
+    invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    new-instance p2, Ljava/lang/IllegalArgumentException;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+.end method
+
+.method public final g(FLsj/b;)Ljava/lang/Object;
+    .locals 1
+
+    iget v0, p0, LD1/g;->c:F
+
+    sub-float/2addr p1, v0
+
+    invoke-virtual {p0, p1, p2}, LD1/g;->e(FLsj/b;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-static {}, Ltj/c;->f()Ljava/lang/Object;
+
+    move-result-object p2
+
+    if-ne p1, p2, :cond_0
+
+    return-object p1
+
+    :cond_0
+    sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    return-object p1
+.end method

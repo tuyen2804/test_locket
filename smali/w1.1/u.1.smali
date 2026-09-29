@@ -1,0 +1,77 @@
+.class public abstract Lw1/u;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static final a(FZZ)J
+    .locals 4
+
+    invoke-static {p0}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    move-result p0
+
+    int-to-long v0, p0
+
+    const-wide/16 v2, 0x0
+
+    if-eqz p1, :cond_0
+
+    const-wide/16 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    move-wide p0, v2
+
+    :goto_0
+    if-eqz p2, :cond_1
+
+    const-wide/16 v2, 0x2
+
+    :cond_1
+    or-long/2addr p0, v2
+
+    const/16 p2, 0x20
+
+    shl-long/2addr v0, p2
+
+    const-wide v2, 0xffffffffL
+
+    and-long/2addr p0, v2
+
+    or-long/2addr p0, v0
+
+    invoke-static {p0, p1}, Lw1/o;->b(J)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method public static synthetic b(FZZILjava/lang/Object;)J
+    .locals 0
+
+    and-int/lit8 p3, p3, 0x4
+
+    if-eqz p3, :cond_0
+
+    const/4 p2, 0x0
+
+    :cond_0
+    invoke-static {p0, p1, p2}, Lw1/u;->a(FZZ)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method public static final synthetic c(FZZ)J
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Lw1/u;->a(FZZ)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method

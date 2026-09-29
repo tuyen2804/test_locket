@@ -1,0 +1,42 @@
+.class public final synthetic LF9/Q;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements LG9/a;
+
+
+# instance fields
+.field public final synthetic a:Lcom/facebook/react/runtime/ReactHostImpl;
+
+.field public final synthetic b:Ljava/lang/String;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/facebook/react/runtime/ReactHostImpl;Ljava/lang/String;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, LF9/Q;->a:Lcom/facebook/react/runtime/ReactHostImpl;
+
+    iput-object p2, p0, LF9/Q;->b:Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final b(LG9/m;)Ljava/lang/Object;
+    .locals 2
+
+    iget-object v0, p0, LF9/Q;->a:Lcom/facebook/react/runtime/ReactHostImpl;
+
+    iget-object v1, p0, LF9/Q;->b:Ljava/lang/String;
+
+    invoke-static {v0, v1, p1}, Lcom/facebook/react/runtime/ReactHostImpl;->y(Lcom/facebook/react/runtime/ReactHostImpl;Ljava/lang/String;LG9/m;)LG9/m;
+
+    move-result-object p1
+
+    return-object p1
+.end method

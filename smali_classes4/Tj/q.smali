@@ -1,0 +1,117 @@
+.class public final enum LTj/q;
+.super Ljava/lang/Enum;
+.source "SourceFile"
+
+
+# static fields
+.field public static final enum a:LTj/q;
+
+.field public static final enum b:LTj/q;
+
+.field public static final enum c:LTj/q;
+
+.field public static final synthetic d:[LTj/q;
+
+.field public static final synthetic e:Lkotlin/enums/EnumEntries;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, LTj/q;
+
+    const-string v1, "RUNTIME"
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, LTj/q;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, LTj/q;->a:LTj/q;
+
+    new-instance v0, LTj/q;
+
+    const-string v1, "BINARY"
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, v1, v2}, LTj/q;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, LTj/q;->b:LTj/q;
+
+    new-instance v0, LTj/q;
+
+    const-string v1, "SOURCE"
+
+    const/4 v2, 0x2
+
+    invoke-direct {v0, v1, v2}, LTj/q;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, LTj/q;->c:LTj/q;
+
+    invoke-static {}, LTj/q;->a()[LTj/q;
+
+    move-result-object v0
+
+    sput-object v0, LTj/q;->d:[LTj/q;
+
+    invoke-static {v0}, Lvj/a;->a([Ljava/lang/Enum;)Lkotlin/enums/EnumEntries;
+
+    move-result-object v0
+
+    sput-object v0, LTj/q;->e:Lkotlin/enums/EnumEntries;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;I)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+.method public static final synthetic a()[LTj/q;
+    .locals 3
+
+    sget-object v0, LTj/q;->a:LTj/q;
+
+    sget-object v1, LTj/q;->b:LTj/q;
+
+    sget-object v2, LTj/q;->c:LTj/q;
+
+    filled-new-array {v0, v1, v2}, [LTj/q;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LTj/q;
+    .locals 1
+
+    const-class v0, LTj/q;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, LTj/q;
+
+    return-object p0
+.end method
+
+.method public static values()[LTj/q;
+    .locals 1
+
+    sget-object v0, LTj/q;->d:[LTj/q;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [LTj/q;
+
+    return-object v0
+.end method

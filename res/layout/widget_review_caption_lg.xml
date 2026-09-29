@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/locket_review_caption_view_lg" android:background="@drawable/bg_overlay_review" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="6.0dp" android:paddingVertical="7.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/locket_review_star_lg_1" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginEnd="3.0dp" />
+    <ImageView android:id="@id/locket_review_star_lg_2" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginEnd="3.0dp" />
+    <ImageView android:id="@id/locket_review_star_lg_3" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginEnd="3.0dp" />
+    <ImageView android:id="@id/locket_review_star_lg_4" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginEnd="3.0dp" />
+    <ImageView android:id="@id/locket_review_star_lg_5" android:layout_width="14.0dp" android:layout_height="14.0dp" />
+    <ImageView android:id="@id/locket_review_comment_icon_lg" android:visibility="gone" android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@drawable/quote" android:layout_marginStart="3.0dp" />
+</LinearLayout>

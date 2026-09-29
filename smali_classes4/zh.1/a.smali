@@ -1,0 +1,19 @@
+.class public interface abstract Lzh/a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lzh/a$a;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/String;)Ljava/util/concurrent/Future;
+.end method
+
+.method public abstract b(Ljava/lang/String;Lzh/a$a;)V
+.end method

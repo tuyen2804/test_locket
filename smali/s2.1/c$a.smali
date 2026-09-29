@@ -1,0 +1,36 @@
+.class public abstract Ls2/c$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ls2/c;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "a"
+.end annotation
+
+
+# direct methods
+.method public static a(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
+    .locals 0
+
+    invoke-static {p0, p1}, Landroid/provider/DocumentsContract;->buildDocumentUriUsingTree(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static b(Landroid/net/Uri;)Ljava/lang/String;
+    .locals 0
+
+    invoke-static {p0}, Landroid/provider/DocumentsContract;->getTreeDocumentId(Landroid/net/Uri;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method

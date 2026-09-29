@@ -1,0 +1,234 @@
+.class public LT9/h0;
+.super Lcom/facebook/react/uimanager/c;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>(Lcom/facebook/react/uimanager/BaseViewManager;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/c;-><init>(Lcom/facebook/react/uimanager/BaseViewManager;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Landroid/view/View;Ljava/lang/String;Ljava/lang/Object;)V
+    .locals 2
+
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p2}, Ljava/lang/String;->hashCode()I
+
+    move-result v0
+
+    const/4 v1, -0x1
+
+    sparse-switch v0, :sswitch_data_0
+
+    goto :goto_0
+
+    :sswitch_0
+    const-string v0, "width"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x5
+
+    goto :goto_0
+
+    :sswitch_1
+    const-string v0, "nodes"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x4
+
+    goto :goto_0
+
+    :sswitch_2
+    const-string v0, "y"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v1, 0x3
+
+    goto :goto_0
+
+    :sswitch_3
+    const-string v0, "x"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    goto :goto_0
+
+    :cond_3
+    const/4 v1, 0x2
+
+    goto :goto_0
+
+    :sswitch_4
+    const-string v0, "result"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_4
+
+    goto :goto_0
+
+    :cond_4
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :sswitch_5
+    const-string v0, "height"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    goto :goto_0
+
+    :cond_5
+    const/4 v1, 0x0
+
+    :goto_0
+    packed-switch v1, :pswitch_data_0
+
+    invoke-super {p0, p1, p2, p3}, Lcom/facebook/react/uimanager/c;->a(Landroid/view/View;Ljava/lang/String;Ljava/lang/Object;)V
+
+    return-void
+
+    :pswitch_0
+    iget-object p2, p0, Lcom/facebook/react/uimanager/c;->a:Lcom/facebook/react/uimanager/BaseViewManager;
+
+    check-cast p2, LT9/i0;
+
+    new-instance v0, Lcom/facebook/react/bridge/DynamicFromObject;
+
+    invoke-direct {v0, p3}, Lcom/facebook/react/bridge/DynamicFromObject;-><init>(Ljava/lang/Object;)V
+
+    invoke-interface {p2, p1, v0}, LT9/i0;->setWidth(Landroid/view/View;Lcom/facebook/react/bridge/Dynamic;)V
+
+    return-void
+
+    :pswitch_1
+    iget-object p2, p0, Lcom/facebook/react/uimanager/c;->a:Lcom/facebook/react/uimanager/BaseViewManager;
+
+    check-cast p2, LT9/i0;
+
+    check-cast p3, Lcom/facebook/react/bridge/ReadableArray;
+
+    invoke-interface {p2, p1, p3}, LT9/i0;->setNodes(Landroid/view/View;Lcom/facebook/react/bridge/ReadableArray;)V
+
+    return-void
+
+    :pswitch_2
+    iget-object p2, p0, Lcom/facebook/react/uimanager/c;->a:Lcom/facebook/react/uimanager/BaseViewManager;
+
+    check-cast p2, LT9/i0;
+
+    new-instance v0, Lcom/facebook/react/bridge/DynamicFromObject;
+
+    invoke-direct {v0, p3}, Lcom/facebook/react/bridge/DynamicFromObject;-><init>(Ljava/lang/Object;)V
+
+    invoke-interface {p2, p1, v0}, LT9/i0;->setY(Landroid/view/View;Lcom/facebook/react/bridge/Dynamic;)V
+
+    return-void
+
+    :pswitch_3
+    iget-object p2, p0, Lcom/facebook/react/uimanager/c;->a:Lcom/facebook/react/uimanager/BaseViewManager;
+
+    check-cast p2, LT9/i0;
+
+    new-instance v0, Lcom/facebook/react/bridge/DynamicFromObject;
+
+    invoke-direct {v0, p3}, Lcom/facebook/react/bridge/DynamicFromObject;-><init>(Ljava/lang/Object;)V
+
+    invoke-interface {p2, p1, v0}, LT9/i0;->setX(Landroid/view/View;Lcom/facebook/react/bridge/Dynamic;)V
+
+    return-void
+
+    :pswitch_4
+    iget-object p2, p0, Lcom/facebook/react/uimanager/c;->a:Lcom/facebook/react/uimanager/BaseViewManager;
+
+    check-cast p2, LT9/i0;
+
+    if-nez p3, :cond_6
+
+    const/4 p3, 0x0
+
+    goto :goto_1
+
+    :cond_6
+    check-cast p3, Ljava/lang/String;
+
+    :goto_1
+    invoke-interface {p2, p1, p3}, LT9/i0;->setResult(Landroid/view/View;Ljava/lang/String;)V
+
+    return-void
+
+    :pswitch_5
+    iget-object p2, p0, Lcom/facebook/react/uimanager/c;->a:Lcom/facebook/react/uimanager/BaseViewManager;
+
+    check-cast p2, LT9/i0;
+
+    new-instance v0, Lcom/facebook/react/bridge/DynamicFromObject;
+
+    invoke-direct {v0, p3}, Lcom/facebook/react/bridge/DynamicFromObject;-><init>(Ljava/lang/Object;)V
+
+    invoke-interface {p2, p1, v0}, LT9/i0;->setHeight(Landroid/view/View;Lcom/facebook/react/bridge/Dynamic;)V
+
+    return-void
+
+    :sswitch_data_0
+    .sparse-switch
+        -0x48c76ed9 -> :sswitch_5
+        -0x37b237e3 -> :sswitch_4
+        0x78 -> :sswitch_3
+        0x79 -> :sswitch_2
+        0x64212b1 -> :sswitch_1
+        0x6be2dc6 -> :sswitch_0
+    .end sparse-switch
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method

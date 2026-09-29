@@ -1,0 +1,30 @@
+.class public final synthetic Lcom/locket/Locket/P;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/util/function/BiConsumer;
+
+
+# direct methods
+.method public synthetic constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
+
+    check-cast p1, Ljava/lang/Void;
+
+    check-cast p2, Ljava/lang/Throwable;
+
+    invoke-static {p1, p2}, Lcom/locket/Locket/b0;->g(Ljava/lang/Void;Ljava/lang/Throwable;)V
+
+    return-void
+.end method

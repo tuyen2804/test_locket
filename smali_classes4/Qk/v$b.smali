@@ -1,0 +1,74 @@
+.class public final LQk/v$b;
+.super LQk/v;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = LQk/v;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+
+# static fields
+.field public static final d:LQk/v$b;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, LQk/v$b;
+
+    invoke-direct {v0}, LQk/v$b;-><init>()V
+
+    sput-object v0, LQk/v$b;->d:LQk/v$b;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 3
+
+    sget-object v0, LQk/w;->a:LQk/w;
+
+    const/4 v1, 0x0
+
+    const-string v2, "Int"
+
+    invoke-direct {p0, v2, v0, v1}, LQk/v;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+.method private static final c(LPj/i;)LJk/S;
+    .locals 1
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, LPj/i;->E()LJk/d0;
+
+    move-result-object p0
+
+    const-string v0, "getIntType(...)"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p0
+.end method
+
+.method public static synthetic d(LPj/i;)LJk/S;
+    .locals 0
+
+    invoke-static {p0}, LQk/v$b;->c(LPj/i;)LJk/S;
+
+    move-result-object p0
+
+    return-object p0
+.end method

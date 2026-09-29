@@ -1,0 +1,91 @@
+.class public final Lwc/B$g;
+.super Lwc/B$h;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lwc/B;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x11
+    name = "g"
+.end annotation
+
+
+# instance fields
+.field public final synthetic b:Lwc/B;
+
+
+# direct methods
+.method public constructor <init>(Lwc/B;)V
+    .locals 0
+
+    iput-object p1, p0, Lwc/B$g;->b:Lwc/B;
+
+    invoke-direct {p0, p1}, Lwc/B$h;-><init>(Lwc/B;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(I)Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lwc/B$g;->b:Lwc/B;
+
+    iget-object v0, v0, Lwc/B;->b:[Ljava/lang/Object;
+
+    aget-object p1, v0, p1
+
+    invoke-static {p1}, Lwc/h0;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public contains(Ljava/lang/Object;)Z
+    .locals 1
+
+    iget-object v0, p0, Lwc/B$g;->b:Lwc/B;
+
+    invoke-virtual {v0, p1}, Lwc/B;->containsValue(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public remove(Ljava/lang/Object;)Z
+    .locals 2
+
+    invoke-static {p1}, Lwc/C;->c(Ljava/lang/Object;)I
+
+    move-result v0
+
+    iget-object v1, p0, Lwc/B$g;->b:Lwc/B;
+
+    invoke-virtual {v1, p1, v0}, Lwc/B;->t(Ljava/lang/Object;I)I
+
+    move-result p1
+
+    const/4 v1, -0x1
+
+    if-eq p1, v1, :cond_0
+
+    iget-object v1, p0, Lwc/B$g;->b:Lwc/B;
+
+    invoke-virtual {v1, p1, v0}, Lwc/B;->F(II)V
+
+    const/4 p1, 0x1
+
+    return p1
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+.end method

@@ -1,0 +1,56 @@
+.class public LD4/C$g;
+.super Landroid/animation/AnimatorListenerAdapter;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = LD4/C;-><init>(Landroidx/media3/ui/c;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:LD4/C;
+
+
+# direct methods
+.method public constructor <init>(LD4/C;)V
+    .locals 0
+
+    iput-object p1, p0, LD4/C$g;->a:LD4/C;
+
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 1
+
+    iget-object p1, p0, LD4/C$g;->a:LD4/C;
+
+    const/4 v0, 0x0
+
+    invoke-static {p1, v0}, LD4/C;->u(LD4/C;I)V
+
+    return-void
+.end method
+
+.method public onAnimationStart(Landroid/animation/Animator;)V
+    .locals 1
+
+    iget-object p1, p0, LD4/C$g;->a:LD4/C;
+
+    const/4 v0, 0x4
+
+    invoke-static {p1, v0}, LD4/C;->u(LD4/C;I)V
+
+    return-void
+.end method

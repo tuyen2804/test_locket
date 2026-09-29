@@ -1,0 +1,13 @@
+.class public final Lcom/google/android/gms/internal/firebase-auth-api/zzado;
+.super Lcom/google/android/gms/internal/firebase-auth-api/zzadm;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Lcom/google/android/gms/internal/firebase-auth-api/zzadu;)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lcom/google/android/gms/internal/firebase-auth-api/zzadm;-><init>(Ljava/lang/String;Lcom/google/android/gms/internal/firebase-auth-api/zzadu;)V
+
+    return-void
+.end method

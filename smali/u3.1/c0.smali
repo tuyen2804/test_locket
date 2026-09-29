@@ -1,0 +1,15 @@
+.class public abstract synthetic Lu3/c0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static bridge synthetic a(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)I
+    .locals 0
+
+    invoke-static {p0, p1}, Landroid/media/AudioManager;->getDirectPlaybackSupport(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)I
+
+    move-result p0
+
+    return p0
+.end method

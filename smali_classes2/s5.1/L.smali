@@ -1,0 +1,38 @@
+.class public final synthetic Ls5/L;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# instance fields
+.field public final synthetic a:Ljava/lang/String;
+
+
+# direct methods
+.method public synthetic constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ls5/L;->a:Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Ls5/L;->a:Ljava/lang/String;
+
+    check-cast p1, LV4/b;
+
+    invoke-static {v0, p1}, Ls5/n0;->T(Ljava/lang/String;LV4/b;)Ljava/util/List;
+
+    move-result-object p1
+
+    return-object p1
+.end method

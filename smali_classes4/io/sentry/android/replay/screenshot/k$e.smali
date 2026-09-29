@@ -1,0 +1,63 @@
+.class public final Lio/sentry/android/replay/screenshot/k$e;
+.super Lkotlin/jvm/internal/t;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lio/sentry/android/replay/screenshot/k;-><init>(Lio/sentry/android/replay/b;Lio/sentry/android/replay/r;Lio/sentry/C3;Lio/sentry/android/replay/s;Lio/sentry/android/replay/util/d;Lkotlin/jvm/functions/Function0;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lio/sentry/android/replay/screenshot/k;
+
+
+# direct methods
+.method public constructor <init>(Lio/sentry/android/replay/screenshot/k;)V
+    .locals 0
+
+    iput-object p1, p0, Lio/sentry/android/replay/screenshot/k$e;->a:Lio/sentry/android/replay/screenshot/k;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/t;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Landroid/graphics/Canvas;
+    .locals 2
+
+    new-instance v0, Landroid/graphics/Canvas;
+
+    iget-object v1, p0, Lio/sentry/android/replay/screenshot/k$e;->a:Lio/sentry/android/replay/screenshot/k;
+
+    invoke-static {v1}, Lio/sentry/android/replay/screenshot/k;->k(Lio/sentry/android/replay/screenshot/k;)Landroid/graphics/Bitmap;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
+
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
+
+    invoke-virtual {p0}, Lio/sentry/android/replay/screenshot/k$e;->a()Landroid/graphics/Canvas;
+
+    move-result-object v0
+
+    return-object v0
+.end method

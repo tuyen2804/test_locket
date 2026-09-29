@@ -1,0 +1,37 @@
+.class public interface abstract Ls7/c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Ls7/c$a;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract a(Ls7/b;)V
+.end method
+
+.method public abstract b(Ls7/b;)V
+.end method
+
+.method public abstract c(Ls7/b;)V
+.end method
+
+.method public abstract d(Ls7/b;)V
+.end method
+
+.method public abstract e(Ls7/b;)V
+.end method
+
+.method public abstract f()V
+.end method
+
+.method public abstract g(Ls7/b;)V
+.end method
+
+.method public abstract h(Ls7/b;)V
+.end method

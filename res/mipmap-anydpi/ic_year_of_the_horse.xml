@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/ic_year_of_the_horse_background" />
+    <foreground android:drawable="@mipmap/ic_year_of_the_horse_foreground" />
+    <monochrome android:drawable="@drawable/ic_year_of_the_horse_monochrome" />
+</adaptive-icon>
