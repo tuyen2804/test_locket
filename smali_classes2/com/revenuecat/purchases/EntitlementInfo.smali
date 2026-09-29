@@ -1105,7 +1105,7 @@
 .method public final isActive()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/revenuecat/purchases/EntitlementInfo;->isActive:Z
+    const/4 v0, 0x1
 
     return v0
 .end method

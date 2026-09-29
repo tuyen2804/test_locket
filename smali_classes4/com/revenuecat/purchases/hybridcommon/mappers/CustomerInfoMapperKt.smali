@@ -85,9 +85,23 @@
 
     move-result-object v0
 
-    const-string v2, "activeSubscriptions"
+    new-instance v2, Ljava/util/ArrayList;
 
-    invoke-static {v2, v0}, Lnj/v;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    check-cast v0, Ljava/util/Collection;
+
+    invoke-direct {v2, v0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    const-string v0, "android_gold:android-gold-3600-1y"
+
+    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    const-string v0, "android_gold"
+
+    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    const-string v0, "activeSubscriptions"
+
+    invoke-static {v0, v2}, Lnj/v;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     move-result-object v4
 
@@ -101,9 +115,23 @@
 
     move-result-object v0
 
-    const-string v2, "allPurchasedProductIdentifiers"
+    new-instance v2, Ljava/util/ArrayList;
 
-    invoke-static {v2, v0}, Lnj/v;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    check-cast v0, Ljava/util/Collection;
+
+    invoke-direct {v2, v0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    const-string v0, "android_gold:android-gold-3600-1y"
+
+    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    const-string v0, "android_gold"
+
+    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    const-string v0, "allPurchasedProductIdentifiers"
+
+    invoke-static {v0, v2}, Lnj/v;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     move-result-object v5
 
