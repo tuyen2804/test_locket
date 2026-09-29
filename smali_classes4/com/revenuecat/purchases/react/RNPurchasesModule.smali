@@ -203,6 +203,12 @@
 .method private synthetic lambda$onReceived$4(Ljava/util/Map;)Lkotlin/Unit;
     .locals 2
 
+    const-string v0, "LOCKET_MOD"
+
+    const-string v1, "RNPurchasesModule emitting Purchases-CustomerInfoUpdated to JS"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     iget-object v0, p0, Lcom/revenuecat/purchases/react/RNPurchasesModule;->reactContext:Lcom/facebook/react/bridge/ReactApplicationContext;
 
     const-class v1, Lcom/facebook/react/modules/core/DeviceEventManagerModule$RCTDeviceEventEmitter;
@@ -468,9 +474,15 @@
 .end method
 
 .method public getCustomerInfo(Lcom/facebook/react/bridge/Promise;)V
-    .locals 0
+    .locals 2
     .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
     .end annotation
+
+    const-string v0, "LOCKET_MOD"
+
+    const-string v1, "RNPurchasesModule.getCustomerInfo() called by React Native"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-direct {p0, p1}, Lcom/revenuecat/purchases/react/RNPurchasesModule;->getOnResult(Lcom/facebook/react/bridge/Promise;)Lcom/revenuecat/purchases/hybridcommon/OnResult;
 
